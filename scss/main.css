@@ -1,0 +1,137 @@
+.body {
+  background-color: rgb(200, 200, 200);
+}
+
+.nav1 {
+  height: 100px;
+  padding: 10px;
+  background-color: rgb(43, 43, 43);
+  position: fixed;
+  padding-top: 20px;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav1 .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav1 .top .sizebox {
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  width: 50px;
+}
+.nav1 .top .theme {
+  display: flex;
+  border: 1px solid white;
+  justify-content: space-around;
+  border-radius: 5px;
+  width: 200px;
+  padding: 2px;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav1 .top .theme .thm {
+  color: rgb(152, 152, 152);
+}
+.nav1 .down {
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav1 .down .case .butn {
+  color: rgb(255, 255, 255);
+}
+
+#prnt {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.butn {
+  border: none;
+  margin: 3px;
+  background-color: transparent;
+}
+
+.butn:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+#flxx {
+  display: flex;
+}
+
+@media print {
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  .nav1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .nav1 {
+    width: 100vw;
+    height: auto;
+  }
+  .nav1 .butn {
+    border: none;
+    width: 40%;
+    height: auto;
+    margin: 3px;
+    background-color: transparent;
+  }
+  .nav1 .butn p {
+    display: none;
+  }
+}
+.sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#editor {
+  margin: -10px;
+  background-color: rgb(255, 255, 255);
+  width: 55vw;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  min-height: 1250px;
+  height: auto;
+  border: none;
+  padding: 100px;
+  font-size: 20px;
+  box-shadow: 0px 0px 50px rgba(41, 41, 41, 0.792);
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav1 {
+    width: 100vw;
+  }
+  #editor {
+    width: 95vw;
+    padding: 30px;
+    min-height: 700px;
+  }
+}
+@media print {
+  #editor {
+    margin-top: 0px;
+    box-shadow: none;
+  }
+}/*# sourceMappingURL=main.css.map */
